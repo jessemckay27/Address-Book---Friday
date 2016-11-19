@@ -1,14 +1,19 @@
 using Nancy;
-using Address.Objects;
+using AddressBook.Objects;
 using System.Collections.Generic;
 
-namespace Address
+namespace AddressBook
 {
-  public Class HomeModule : NancyModule
+  public class HomeModule : NancyModule
   {
     public HomeModule()
     {
-
+      Get["/"] = _ => {
+        return View["index.cshtml"];
+      };
+      Get["/contact/"] = _ => {
+        return View["contact_form.cshtml"];
+      };
     }
   }
 }
