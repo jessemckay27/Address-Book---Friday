@@ -38,5 +38,21 @@ namespace AddressBook.Objects
     {
       return _instances;
     }
+
+    public int GetId()
+    {
+      return _id;
+    }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
+
+
+    public static Contact Find(int searchId)
+    {
+      return _instances[searchId - 1];
+    }
   }
 }

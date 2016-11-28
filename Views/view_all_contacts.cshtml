@@ -1,0 +1,11 @@
+<h1>Contacts</h1>
+<ul>
+
+@foreach (var contact in Model)
+{
+  <li><a href="contact/view_all_contacts/@contact.GetId()">@contact.GetName()</a></li>
+}
+
+
+</ul>
+  <a href="/contact/new_contact">add a new contact</a>
