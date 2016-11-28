@@ -15,8 +15,28 @@ namespace AddressBook.Objects
       _name = newName;
       _number = newNumber;
       _address = newAddress;
-      _id = _instances.Count; //sets id equal to lenth of list
       _instances.Add(this); //moves this object into _instances list
+      _id = _instances.Count; //sets id equal to lenth of list
+    }
+
+    public string GetName()
+    {
+      return _name;
+    }
+
+    public string GetNumber()
+    {
+      return _number;
+    }
+
+    public string GetAddress()
+    {
+      return _address;
+    }
+
+    public static List<Contact> GetAll()
+    {
+      return _instances;
     }
   }
 }
