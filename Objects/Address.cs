@@ -49,7 +49,6 @@ namespace AddressBook.Objects
       _instances.Clear();
     }
 
-
     public static Contact Find(int searchId)
     {
       return _instances[searchId - 1];
