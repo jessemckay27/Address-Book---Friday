@@ -26,7 +26,7 @@ _Created a Contacts List using object oriented C#.  The user can view their curr
 * Download our files from Github Repository
 * Navigate to folder with Windows PowerShell
 * Load dnx kestrel
-* You may view our website directly at (https://jessemckay27.github.io/pizza-shop/)
+* Open localhost:5004 in browser
 
 ## Support and contact details
 
